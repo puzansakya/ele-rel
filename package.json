@@ -1,0 +1,39 @@
+{
+  "name": "pingo",
+  "version": "1.1.1",
+  "description": "Love for NodeJS",
+  "main": "src/core/main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps",
+    "release": "build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanskarsakya/ele-rel.git"
+  },
+  "author": "Sandeep Acharya",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^3.0.9",
+    "electron-builder": "^20.36.2"
+  },
+  "build": {
+    "appId": "com.applyhead.pingo",
+    "productName": "Pingo",
+    "copyright": "Copyright © year Sandeep Acharya",
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "type": "distribution"
+    },
+    "publish": [
+      "github"
+    ]
+  },
+  "dependencies": {
+    "electron-updater": "^4.0.4"
+  },
+  "keywords": []
+}
